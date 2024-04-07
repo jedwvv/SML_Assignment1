@@ -23,12 +23,12 @@ del temp_loaded, temp_sparse_
 ```
 import pickle as pkl
 with open("{filename}", "wb") as writefile:
-    pkl.dump( {ML-model}, writefile )
+    pkl.dump( {MLmodel}, writefile )
 ```
 
 ### To load a classifier (or pipelines etc.) just use pickle
 ```
 import pickle as pkl
 with open("{filename}", "rb") as loadfile:
-    ML-model = pkl.load( loadfile )
+    MLmodel = pkl.load( loadfile )
 ```
