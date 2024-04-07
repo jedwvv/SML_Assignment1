@@ -17,3 +17,18 @@ X = temp_loaded[:,:n_features]
 y = temp_loaded[:,n_features]
 del temp_loaded, temp_sparse_
 ```
+
+
+### To save a classifier (or pipelines etc.) just use pickle
+```
+import pickle as pkl
+with open("{filename}", "wb") as writefile:
+    pkl.dump( {ML-model}, writefile )
+```
+
+### To load a classifier (or pipelines etc.) just use pickle
+```
+import pickle as pkl
+with open("{filename}", "rb") as loadfile:
+    ML-model = pkl.load( loadfile )
+```
