@@ -1,3 +1,7 @@
 .ipynb*/*
 .ipynb*
 *.csv
+spartan*
+spartan/*
+slurm_out/*
+slurm_out
